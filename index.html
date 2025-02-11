@@ -3,38 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Currículo - Carlos Eduardo</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio de Jogos</title>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <!-- Imagem lateral -->
-        <div class="image-container">
-            <img src="./img/ia.png" alt="Imagem Ilustrativa">
-        </div>
+        <header>
+            <h1>Carlos Eduardo Garcia de Souza</h1>
+            <p>Desenvolvedor Full-Stack | Criador de Experiências Interativas | Educador de Inglês</p>
+        </header>
 
-        <!-- Conteúdo do portfólio -->
-        <div class="portfolio-container">
-            <h1>MEU PORTFÓLIO DE JOGOS</h1>
+        <nav>
+            <button onclick="showSection('resumo', this)">Sobre Mim</button>
+            <button onclick="showSection('formacao', this)">Formação</button>
+            <button onclick="showSection('experiencia', this)">Experiência</button>
+            <button onclick="showSection('habilidades', this)">Habilidades</button>
+            <button onclick="showSection('projetos', this)">Projetos</button>
+            <button onclick="showSection('contato', this)">Contato</button>
+        </nav>
 
-            <!-- Lista de Jogos -->
-            <div class="games-list">
-                <div class="game-card">
-                    <h2>JOGO DA MEMÓRIA</h2>
-                    <p>O Jogo da Memória é um desafio onde você deve encontrar pares de cartas iguais antes que suas vidas acabem.</p>
-                    <a href="https://iamzelk.github.io/jogodamemoria/" target="_blank">Ver no GitHub</a>
-                </div>
-
-                <div class="game-card">
-                    <h2>SIMON GAME</h2>
-                    <p>O Simon Game é um desafio de memória onde você precisa repetir sequências de cores que ficam cada vez mais difíceis.</p>
-                    <a href="https://iamzelk.github.io/simongame/" target="_blank">Ver no GitHub</a>
-                </div>
+        <section id="content">
+            <div class="section active" id="resumo">
+                <h2>📌 Sobre Mim</h2>
+				<p>Sou professor de inglês e formado em pedagogia, atualmente me especializando em análise e desenvolvimento de sistemas. Minha paixão está em unir educação e tecnologia, criando soluções inovadoras que transformam o aprendizado em experiências dinâmicas e acessíveis.</p>
+                <p>Com um olhar voltado tanto para o ensino quanto para o desenvolvimento digital, trabalho na criação de jogos educativos, materiais didáticos interativos e plataformas de ensino, sempre buscando novas formas de tornar o conhecimento mais envolvente e acessível para todos.</p>
             </div>
-        </div>
+
+            <div class="section" id="formacao">
+                <h2>🎓 Formação</h2>
+				<ul>
+					<li>Pedagogia - Universidade Anhembi Morumbi (2020-2023)</li>
+					<li>Letras - Inglês - Universidade Anhembi Morumbi (2024-2026)</li>
+					<li>Desenvolvimento Full Stack - Universidade Cruzeiro do Sul (2024-2026)</li>
+					<li>Análise e Desenvolvimento de Sistemas - Universidade Cruzeiro do Sul (2025-2027)</li>
+				</ul>
+            </div>
+
+            <div class="section" id="experiencia">
+                <h2>💼 Experiência</h2>
+				<ul>
+					<li>Professor de Inglês - Fisk (2021 - 2023)</li>
+					<li>Auxiliar de Operações - UCI Cinemas (2024 - 2025)</li>
+				</ul>
+            </div>
+
+            <div class="section" id="habilidades">
+                <h2>🛠️ Habilidades</h2>
+                <ul>
+        <!-- Desenvolvimento e Tecnologia -->
+        <li>Desenvolvimento Full-Stack (HTML, CSS, JavaScript, React, Node.js)</li>
+        <li>Banco de Dados (MySQL, MongoDB, Firebase)</li>
+        <li>APIs e Integrações (REST, GraphQL)</li>
+
+        <!-- Design e Animação -->
+        <li>Design Gráfico (Illustrator, Photoshop, Canva)</li>
+        <li>Animação 2D e 3D (Blender, After Effects)</li>
+
+        <!-- Educação e Ensino -->
+        <li>Ensino de Inglêse Metodologias Ativas</li>
+        <li>Desenvolvimento de Plataformas Educacionais</li>
+        <li>Produção de Conteúdo para Ensino Online</li>
+        <li>Criação de Cursos e Workshops</li>
+                </ul>
+            </div>
+
+            <div class="section" id="projetos">
+                <h2>🚀 Projetos</h2>
+                <ul>
+                    <li><a href="https://iamzelk.github.io/simongame/" target="_blank">Projeto 1 - Simon Game</a></li>
+                    <li><a href="https://iamzelk.github.io/jogodamemoria/" target="_blank">Projeto 2 - Jogo da Memória</a></li>
+                </ul>
+            </div>
+
+            <div class="section" id="contato">
+                <h2>📞 Contato</h2>
+				<ul>
+					<li>Email: <a href="mailto:carluuseduardogs@gmail.com">carluuseduardogs@gmail.com</a></li>
+					<li>GitHub: <a href="https://github.com/iamzelk" target="_blank">github.com/iamzelk</a></li>
+					<li>Instagram: <a href="https://instagram.com/iamzelk" target="_blank">@iamzelk</a></li>
+					<li>Behance: <a href="https://www.behance.net/iamzelk" target="_blank">@iamzelk</a></li>
+				</ul>
+            </div>
+        </section>
     </div>
 </body>
 </html>
