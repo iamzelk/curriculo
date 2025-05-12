@@ -126,16 +126,10 @@ a:hover {
     text-decoration: underline;
 }
 
-.games-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.games-list {
-    display: flex;
-    flex-direction: column;
+/* Projetos */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     margin-top: 10px;
 }
@@ -147,13 +141,12 @@ a:hover {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 90%;
     margin: 0 auto;
 }
 
 .game-card h3 {
     font-size: 1.17em;
-	margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 .game-card p {
@@ -178,4 +171,14 @@ a:hover {
 
 .game-card a:hover {
     background: #0056b3;
+}
+
+.game-card.em-breve {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #555;
+    color: #aaa;
+}
+
+.game-card.em-breve a {
+    display: none;
 }
