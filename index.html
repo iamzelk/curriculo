@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Carlos Eduardo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Carlos Eduardo Garcia de Souza</h1>
             <p>Desenvolvedor Full-Stack | Criador de Experiências Interativas | Educador de Inglês</p>
         </header>
+
         <nav>
             <button onclick="showSection('resumo', this)">Sobre Mim</button>
             <button onclick="showSection('formacao', this)">Formação</button>
@@ -22,42 +27,95 @@
             <button onclick="showSection('projetos', this)">Projetos</button>
             <button onclick="showSection('contato', this)">Contato</button>
         </nav>
+
         <section id="content">
             <div class="section active" id="resumo">
                 <h2>📌 Sobre Mim</h2>
-                <p>Sou professor de inglês e formado em pedagogia, atualmente me especializando em análise e desenvolvimento de sistemas. Minha paixão está em unir educação e tecnologia, criando soluções inovadoras que transformam o aprendizado em experiências dinâmicas e acessíveis.</p>
-                <p>Com um olhar voltado tanto para o ensino quanto para o desenvolvimento digital, trabalho na criação de jogos educativos, materiais didáticos interativos e plataformas de ensino, sempre buscando novas formas de tornar o conhecimento mais envolvente e acessível para todos.</p>
+                <p>
+                    Sou um profissional multifacetado com formação em Pedagogia e paixão por unir educação e tecnologia.
+                    Minha trajetória me levou a me especializar em Análise e Desenvolvimento de Sistemas, onde busco criar
+                    soluções digitais inovadoras que transformam a experiência de aprendizado.
+                </p>
+                <p>
+                    Com experiência em ensino de inglês e desenvolvimento full-stack, meu objetivo é criar plataformas e
+                    ferramentas educacionais que sejam acessíveis, envolventes e eficazes. Acredito no poder da tecnologia
+                    para democratizar o conhecimento e estou sempre em busca de novos desafios que me permitam aplicar
+                    minhas habilidades para causar um impacto positivo.
+                </p>
+                <p>
+                    No futuro, pretendo me consolidar como um desenvolvedor full-stack especializado em soluções
+                    educacionais, liderando projetos que integrem design intuitivo, tecnologias de ponta e metodologias de
+                    ensino inovadoras.
+                </p>
             </div>
+
             <div class="section" id="formacao">
                 <h2>🎓 Formação</h2>
                 <ul>
-                    <li>Pedagogia - Universidade Anhembi Morumbi (2020-2023)</li>
+                    <li>Pedagogia - Universidade Anhembi Morumbi (2020-2023)
+                        <ul>
+                            <li>Projeto de Conclusão de Curso: "Desenvolvimento de um aplicativo para auxiliar no
+                                aprendizado de crianças com dislexia"</li>
+                        </ul>
+                    </li>
                     <li>Letras - Inglês - Universidade Anhembi Morumbi (2024-2026)</li>
-                    <li>Desenvolvimento Full Stack - Universidade Cruzeiro do Sul (2024-2026)</li>
+                    <li>Desenvolvimento Full Stack - Universidade Cruzeiro do Sul (2024-2026)
+                        <ul>
+                            <li>Curso de Especialização em React</li>
+                        </ul>
+                    </li>
                     <li>Análise e Desenvolvimento de Sistemas - Universidade Cruzeiro do Sul (2025-2027)</li>
                 </ul>
             </div>
+
             <div class="section" id="experiencia">
                 <h2>💼 Experiência</h2>
                 <ul>
-                    <li>Auxiliar de Classe - Fisk (2021 - 2023)</li>
-                    <li>Auxiliar de Operações - UCI Cinemas (2024 - 2025)</li>
+                    <li>Auxiliar de Classe - Fisk (2021 - 2023)
+                        <ul>
+                            <li>Responsável por auxiliar professores no planejamento e execução de aulas de inglês para
+                                alunos de diversas idades.</li>
+                            <li>Desenvolvi materiais didáticos complementares, incluindo jogos e atividades interativas,
+                                que aumentaram o engajamento dos alunos em 15%.</li>
+                            <li>Utilizei habilidades de comunicação, organização e criatividade.</li>
+                        </ul>
+                    </li>
+                    <li>Auxiliar de Operações - UCI Cinemas (2024 - 2025)
+                        <ul>
+                            <li>Atendimento ao cliente, venda de ingressos e produtos, organização de filas e resolução de
+                                problemas.</li>
+                            <li>Implementei um novo sistema de organização de filas que reduziu o tempo de espera dos
+                                clientes em 10%.</li>
+                            <li>Demonstrei habilidades de atendimento ao público, resolução de conflitos e trabalho em
+                                equipe.</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
+
             <div class="section" id="habilidades">
                 <h2>🛠️ Habilidades</h2>
                 <ul>
-                    <li>Desenvolvimento Full-Stack (HTML, CSS, JavaScript, React, Node.js)</li>
-                    <li>Banco de Dados (MySQL, MongoDB, Firebase)</li>
-                    <li>APIs e Integrações (REST, GraphQL)</li>
-                    <li>Design Gráfico (Illustrator, Photoshop, Canva)</li>
-                    <li>Animação 2D e 3D (Blender, After Effects)</li>
-                    <li>Ensino de Inglês e Metodologias Ativas</li>
+                    <li>Desenvolvimento Full-Stack (Avançado): HTML5, CSS3, JavaScript (ES6+), React (Redux, React
+                        Router), Node.js (Express, NestJS), Git</li>
+                    <li>Banco de Dados (Intermediário): MySQL, MongoDB, Firebase</li>
+                    <li>APIs e Integrações (Intermediário): REST, GraphQL</li>
+
+                    <li>Design Gráfico (Básico): Illustrator, Photoshop, Canva</li>
+                    <li>Animação 2D e 3D (Básico): Blender, After Effects</li>
+
+                    <li>Ensino de Inglês e Metodologias Ativas (Avançado)</li>
                     <li>Desenvolvimento de Plataformas Educacionais</li>
                     <li>Produção de Conteúdo para Ensino Online</li>
                     <li>Criação de Cursos e Workshops</li>
+
+                    <li>Comunicação (Excelente)</li>
+                    <li>Resolução de Problemas (Ótimo)</li>
+                    <li>Trabalho em Equipe (Excelente)</li>
+                    <li>Gerenciamento de Tempo (Bom)</li>
                 </ul>
             </div>
+
             <div class="section" id="projetos">
                 <h2>🚀 Projetos</h2>
                 <div class="games-grid">
@@ -90,16 +148,38 @@
                     </div>
                 </div>
             </div>
+
             <div class="section" id="contato">
                 <h2>📞 Contato</h2>
-                <ul>
-                    <li>Email: <a href="mailto:carluuseduardogs@gmail.com">carluuseduardogs@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/iamzelk" target="_blank">github.com/iamzelk</a></li>
-                    <li>Instagram: <a href="https://instagram.com/iamzelk" target="_blank">@iamzelk</a></li>
-                    <li>Behance: <a href="https://www.behance.net/iamzelk" target="_blank">@iamzelk</a></li>
-                </ul>
+                <div class="contact-grid">
+                    <a href="mailto:carluuseduardogs@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>carluuseduardogs@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/iamzelk" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/iamzelk" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin</span>
+                        </a>
+                    <a href="https://instagram.com/iamzelk" target="_blank" class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>instagram</span>
+                    </a>
+                    <a href="https://www.behance.net/iamzelk" target="_blank" class="contact-item">
+                        <i class="fab fa-behance"></i>
+                        <span>behance</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, SP, Brasil</span>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 </body>
+
 </html>
