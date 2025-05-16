@@ -176,6 +176,17 @@ a:hover {
     background: #0056b3;
 }
 
+.game-card.em-breve {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #555;
+    color: #aaa;
+}
+
+.game-card.em-breve a {
+    display: none;
+}
+
+
 /* Contato */
 .contact-grid {
     display: grid;
