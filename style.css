@@ -3,24 +3,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-image: url("img/bg.jpg");
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
+    color: white; /* Cor do texto no body */
 }
 
 .container {
     width: 90%;
     max-width: 1000px;
-    height: 85%;
+    height: auto;
     padding: 30px;
     border-radius: 24px;
     border: 1px solid #003477;
@@ -28,6 +28,7 @@ body {
     background-size: 100% 100%;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
 /* Estilização do Cabeçalho */
@@ -81,6 +82,7 @@ nav button:hover {
     display: none;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
+    padding: 20px;
 }
 
 .section.active {
@@ -129,7 +131,8 @@ a:hover {
 /* Projetos */
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
     gap: 15px;
     margin-top: 10px;
 }
@@ -173,21 +176,11 @@ a:hover {
     background: #0056b3;
 }
 
-.game-card.em-breve {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: #555;
-    color: #aaa;
-}
-
-.game-card.em-breve a {
-    display: none;
-}
-
 /* Contato */
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -195,13 +188,14 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid #003477;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     text-align: left;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s, transform 0.3s;
+    overflow: hidden;
 }
 
 .contact-item:hover {
@@ -210,17 +204,25 @@ a:hover {
 }
 
 .contact-item i {
-    font-size: 28px;
+    font-size: 24px;
     color: #00a8ff;
-    width: 35px;
+    width: 30px;
     text-align: center;
 }
 
+/* Forçar a cor branca no texto dos links e spans de contato */
+.contact-item a,
+.contact-item span {
+    color: white !important;
+}
+
 .contact-item a {
-    color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contact-item a:hover {
@@ -228,7 +230,23 @@ a:hover {
 }
 
 .contact-item span {
-    font-size: 22px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        text-align: center;
+    }
 }
 
 /* Habilidades */
@@ -388,4 +406,133 @@ a:hover {
     height: 20px;
     background: #1770ee;
     border-radius: 50%;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.7em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav button {
+        font-size: 0.9em;
+        padding: 0.6em 0.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p,
+    ul li,
+    a {
+        font-size: 1em;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 1em;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-year {
+        position: static;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.3em;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+        padding: 0.5em;
+    }
+
+    .timeline-content::after {
+        display: none;
+    }
+
+    .section {
+        padding: 10px;
+    }
+}
+
+/* Para telas menores que 480px (celulares menores) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    nav button {
+        font-size: 0.8em;
+        padding: 0.5em 0.7em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    p,
+    ul li,
+    a {
+        font-size: 0.9em;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category h3 {
+        font-size: 1.2em;
+    }
+
+    .skill-item span {
+        font-size: 0.9em;
+    }
+
+    .timeline-year {
+        font-size: 0.8em;
+    }
+
+    .timeline-content i {
+        display: none;
+    }
 }
